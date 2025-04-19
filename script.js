@@ -1,8 +1,6 @@
-// Kreiranje novog <p> elementa
-const noviElement = document.createElement("p");
+let btn = document.querySelector("#test");
 
-// Dodavanje teksta unutar elementa
-noviElement.textContent = "Miloš test radi";
-
-// Dodavanje elementa u body stranice
-document.body.appendChild(noviElement);
+btn.addEventListener("click", function () {
+  let form = document.querySelector("#login-form-block");
+  form.style.opacity = "0";
+});
