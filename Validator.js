@@ -5,14 +5,14 @@ let config = {
     maxlength: 50,
   },
 
-  register_email: {
+  email: {
     required: true,
     email: true,
     minlength: 5,
     maxlength: 50,
   },
 
-  register_lozinka: {
+  lozinka: {
     required: true,
     minlength: 7,
     maxlength: 25,
@@ -23,7 +23,7 @@ let config = {
     required: true,
     minlength: 7,
     maxlength: 25,
-    matching: "register_lozinka",
+    matching: "lozinka",
   },
 };
 
