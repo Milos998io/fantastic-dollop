@@ -29,7 +29,7 @@ let config = {
 
 let validator = new validator(config, "#regsiter-form");
 
-document.querySelector("#registrationForm").addEventListener("submit", (e) => {
+document.querySelector("#regsiter-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (validator.validationPassed()) {
