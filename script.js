@@ -31,7 +31,7 @@ document.querySelector("#register-form").addEventListener("submit", (e) => {
 
   if (validator.validationPassed()) {
     let user = new User();
-    user.username = document.querySelector("#korisnicko-ime").value;
+    user.username = document.querySelector("#korisnicko-ime-2").value;
     user.email = document.querySelector("#register-email").value;
     user.password = document.querySelector("#register-lozinka").value;
   } else {
