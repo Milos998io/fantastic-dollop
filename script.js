@@ -33,7 +33,7 @@ document.querySelector("#register-form").addEventListener("submit", (e) => {
     let user = new User();
     user.username = document.querySelector("#korisnicko-ime");
     user.email = document.querySelector("#register-email");
-    user.username = document.querySelector("#register-lozinka");
+    user.password = document.querySelector("#register-lozinka");
   } else {
     alert("Greška u validaciji");
   }
