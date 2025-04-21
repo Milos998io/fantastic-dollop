@@ -1,35 +1,32 @@
 let config = {
-  korisnicko_ime: {
+  "korisnicko-ime": {
     required: true,
     minlength: 5,
     maxlength: 50,
   },
-
-  email: {
+  "register-email": {
     required: true,
     email: true,
     minlength: 5,
     maxlength: 50,
   },
-
-  lozinka: {
+  "register-lozinka": {
     required: true,
     minlength: 7,
     maxlength: 25,
-    matching: "ponovi_lozinku",
+    matching: "ponovi-lozinku",
   },
-
-  ponovi_lozinku: {
+  "ponovi-lozinku": {
     required: true,
     minlength: 7,
     maxlength: 25,
-    matching: "lozinka",
+    matching: "register-lozinka",
   },
 };
 
-let validator = new Validator(config, "#regsiter-form");
+let validator = new Validator(config, "#register-form");
 
-document.querySelector("#regsiter-form").addEventListener("submit", (e) => {
+document.querySelector("#register-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (validator.validationPassed()) {
