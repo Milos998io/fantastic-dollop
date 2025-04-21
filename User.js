@@ -3,7 +3,7 @@ class User {
   username = "";
   email = "";
   password = "";
-  api_url = "https://x8ki-letl-twmt.n7.xano.io/api:EAYt7oEE/user";
+  api_url = "https://x8ki-letl-twmt.n7.xano.io/api:EAYt7oEE";
 
   create() {
     let data = {

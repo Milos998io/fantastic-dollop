@@ -30,7 +30,10 @@ document.querySelector("#register-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
   if (validator.validationPassed()) {
-    alert("Sve je ok");
+    let user = new User();
+    user.username = document.querySelector("#korisnicko-ime");
+    user.email = document.querySelector("#register-email");
+    user.username = document.querySelector("#register-lozinka");
   } else {
     alert("Greška u validaciji");
   }
